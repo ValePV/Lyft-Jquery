@@ -1,0 +1,107 @@
+*{
+  font-family: 'Cuprum';
+}
+.img-splash{
+  width: 85%;
+}
+.img-splash1{
+  width: 100%;
+  margin-top: 220px;
+  margin-bottom: 260px;
+}
+.lyft-logo{
+	width: 60px;
+}
+.cont-fondo{
+  padding: 0;
+}
+.cont-fondo1{
+  background-image: url(../../assets/images/fondo2.jpg);
+  background-size: cover;
+  height: 680px;
+  
+}
+.fondo{
+  height: 660px;
+  width: 100%;
+  object-fit:cover;
+}
+.lyft-nav{
+  margin-bottom: 0;
+}
+
+.login, .singup{
+  background-color: #ea0a8e;
+  border-color: #ea0a8e;
+  color: white;
+}
+.login1{
+  background-color: transparent;
+  border:3px solid white;
+  color: white;
+  margin:570px 0px 0px 15px;
+}
+.singup1{
+  background-color: transparent;
+  border:3px solid white;
+  color: white;
+  margin:570px 0px 0px 90px;
+}
+.add-phone{
+  padding: 20px 0px 20px 0px;
+}
+.cont-signup{
+  padding:100px 50px 0px 50px;
+}
+.logo-signup{
+  width: 100px;
+}
+.back-sign{
+  width: 100%;
+  height: 645px;
+  object-fit:cover;
+}
+.country-selection{
+  padding: 10px 0px 10px 190px;
+}
+.section-number{
+  width: 330px;
+  padding: 10px 0px 20px 165px;
+
+}
+.but-back{
+  margin-top: 100px;
+}
+.but-back1{
+  margin-top: 50px;
+}
+.but-back2{
+  margin-top: 150px;
+}
+.but-nxt{
+  margin-top: 100px;
+  width: 100%;
+  background-color: #ea0a8e;
+  border-color: #ea0a8e;
+  color: white;
+}
+.but-nxt1{
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ea0a8e;
+  border-color: #ea0a8e;
+  color: white;
+}
+.but-nxt2{
+  margin-top: 150px;
+  width: 100%;
+  background-color: #ea0a8e;
+  border-color: #ea0a8e;
+  color: white;
+}
+.first-LAB{
+  /*margin: 20px 0px 10px 180px;*/
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+

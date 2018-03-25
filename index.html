@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Lyft</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+  <!--star header-->
+  <header class="header">
+    <div class="row splash">
+      <div class="hidden-xs hidden-sm col-md-12 ">
+        <img class ="img-splash" src="assets/images/lyft-splash.gif">
+      </div>
+    </div>
+    <div class="row splash">
+      <div class="col-xs-12 col-sm-12 hidden-md hidden-lg ">
+        <img class ="img-splash1" src="assets/images/lyft-splash.gif">
+      </div>
+    </div>
+    <nav class="lyft-nav navbar navbar-inverse hidden-xs col-sm-12 col-md-12">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="lyft-logo" src="assets/images/lyft-logo.png"></a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <form class="navbar-form navbar-right">
+            <button type="submit" class="login btn btn-default btn-lg" onclick="log()">LOG IN</button>
+            <button type="submit" class="singup btn btn-default btn-lg" onclick="sign()">SIGN UP</button>
+          </form>
+        </div><!-- /.navbar-collapse-->
+      </div><!-- /.container-fluid-->
+    </nav><!--/.lyft-nav-->
+    <div class="cont-fondo hidden-xs hidden-sm col-md-12">
+      <img class="fondo" src="assets/images/fondo.jpg">
+    </div>
+    <div class="cont-fondo1 col-xs-12 hidden-sm hidden-md hidden-lg">
+      <button type="submit" class="login1 btn btn-default btn-lg" onclick="log()">LOG IN</button>
+      <button type="submit" class="singup1 btn btn-default btn-lg" onclick="sign()">SIGN UP</button>
+    </div>
+  </header>
+  <!--finish header-->
+  <!--start section-signup-->
+  <section class="section-signup" id="sec-signup">
+    <div class="row">
+      <div class="cont-signup col-xs-12 col-sm-12 col-md-6">
+        <img class="logo-signup" src="assets/images/lyft-logo.png">
+        <div class="page-header">
+          <h1 class="text-center">SIGN UP </h1>
+        </div>
+        <h3 class="text-center">Get a ride in minutes</h3>
+        <div class="country-selection input-group">
+            <div class="input-group-btn bs-dropdown-to-select-group">
+              <button type="button" class="btn btn-default btn-lg dropdown-toggle as-is bs-dropdown-to-select" data-toggle="dropdown" tabindex="-1">
+                <span data-bind="bs-drp-sel-label" class="country">Country</span>
+                <input type="hidden" name="country_path" data-bind="bs-drp-sel-value" value="Customer">
+                <span class="caret"></span>
+              </button>
+              <ul class="menudrop dropdown-menu" role="menu">
+              <!-- Loop -->
+                <li data-value="mexico"><a href="#">Mexico</a></li>
+                <li data-value="colombia"><a href="#">Colombia</a></li>
+                <li data-value="peru"><a href="#">Perú</a></li>
+                <li data-value="eeuu"><a href="#">USA</a></li>
+              <!-- END Loop -->
+              </ul>
+            </div><!--input-group-btn-->
+          </div>
+          <div class="section-number">
+            <div class="carrier-selection input-group">
+              <div class="input-group-btn bs-dropdown-to-select-group">
+                <button type="button" class="btn btn-default dropdown-toggle as-is bs-dropdown-to-select" data-toggle="dropdown" tabindex="-1">
+                  <span data-bind="bs-drp-sel-label" class="carrier">+91</span>
+                  <input type="hidden" name="country_path" data-bind="bs-drp-sel-value" value="Customer">
+                  <span class="caret"></span>
+                </button>
+                   <ul class="carmenu dropdown-menu" role="menu">
+                <!-- Loop -->
+                  <li data-value="Customer"><a href="#">+91</a></li>
+                  <li data-value="Vendor"><a href="#">+52</a></li>
+                <!-- END Loop -->
+                </ul>
+              </div><!-- /input-group-btn -->
+              <input type="text" class="form-control input-num" aria-label="...">
+            </div><!-- /input-group -->
+          </div><!--/.section-number-->
+          <div class="bottom text-center">
+            <p>We'll send a text to verify your phone</p>
+          </div>
+          <div class="section-butts row">
+            <div class="col-xs-3 col-sm-3 col-md-3">
+              <button type="submit" class="but-back btn btn-default btn-lg" onclick="back()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6">
+              <button type="submit" class="but-nxt btn btn-default btn-lg" id="btn-count" onclick="next()">NEXT</button>
+            </div>
+          </div><!--/.section-butts-->
+        </div><!--/.cont-signup-->
+      <div class="hidden-xs hidden-sm col-md-6">
+        <img class="back-sign" src="assets/images/fondo-signup3.jpg">
+      </div>
+    </div><!--row-->
+  </section>
+  <!--finish section-signup-->
+  <!--start section-signup1-->
+  <section class="section-signup1" id="section-verify">
+    <div class="row">
+      <div class="cont-signup col-xs-12 col-sm-12 col-md-6">
+        <img class="logo-signup" src="assets/images/lyft-logo.png">
+        <div class="page-header">
+          <h1 class="text-center">Verify yout phone number </h1>
+        </div>
+        <h3 class="text-center">Join now for free ride credit</h3>
+        <div class="row">
+          <div class="input-group first-LAB col-xs-6 col-xs-offset-2 col-sm-6 col-sm-offset-2 col-md-5 col-md-offset-3">
+            <span class="input-group-addon">LAB</span>
+            <input class="form-control" type="text" name="source"/>
+            <span class="input-group-addon input-group-separator"></span>
+            <input class="form-control" type="text" name="source"/>
+            <span class="input-group-addon input-group-separator"></span>
+            <input class="form-control" type="url" name="source"/>
+            <span class="input-group-addon input-group-separator"></span>
+          </div><!--/.input-group-->
+          <p class="text-center">Enter the code sent to +52 </p>
+          <p class="text-center"><button class="btn btn-default" type="submit" onclick="resend()">Resend code</button></p>
+        </div><!--row-->
+        <div class="section-butts row">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <button type="submit" class="but-back btn btn-default btn-lg" onclick="back1()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <button type="submit" class="but-nxt btn btn-default btn-lg" onclick="next1()">NEXT</button>
+          </div>
+        </div><!--/.section-butts-->
+      </div><!--/.cont-signup-->
+      <div class="hidden-xs hidden-sm col-md-6">
+        <img class="back-sign" src="assets/images/fondo-signup3.jpg">
+      </div>
+    </div><!--row-->
+  </section>
+  <!--finish section-signup1-->
+  <!--start section-register-->
+  <section class="section-register" id="section-regist">
+    <div class="row">
+      <div class="cont-signup col-xs-12 col-sm-12 col-md-6">
+        <img class="logo-signup" src="assets/images/lyft-logo.png">
+        <div class="page-header">
+          <h1 class="text-center">Sign Up</h1>
+        </div>
+        <h3 class="text-center">Get a ride in minutes</h3>
+        <div class="row">
+          <div class="form-group col-md-3 col-md-offset-3">
+            <input type="email" class="form-control" id="exampleInputName" placeholder="Name" required>
+          </div>
+          <div class="form-group col-md-3">
+            <input type="email" class="form-control" id="exampleInputLastName" placeholder="Last Name" required>
+          </div>
+        </div><!--row-->
+        <div class="row">
+          <div class="form-group col-md-6 col-md-offset-3">
+            <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email" required>
+          </div>
+        </div><!--row-->
+        <div class="row">
+          <div class="form-group col-md-6 col-md-offset-3">
+            <input type="email" class="form-control" id="exampleInputPassword" placeholder="Password" required>
+          </div>
+        </div><!--row-->
+        <div class="row">
+          <div class="checkbox col-xs-6 col-xs-offset-2 col-sm-6 col-sm-offset-2 col-md-6 col-md-offset-4">
+            <label>
+              <input type="checkbox"> I agree to Lyft'ss <a href="#"><b>Terms of Service</b></a>
+            </label>
+          </div>
+        </div><!--row-->
+        <div class="section-butts row">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <button type="submit" class="but-back1 btn btn-default btn-lg" onclick="back2()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <button type="submit" class="but-nxt1 btn btn-default btn-lg" onclick="next2()">NEXT</button>
+          </div>
+        </div><!--/.section-butts-->
+      </div><!--/.cont-signup-->
+      <div class="hidden-xs hidden-sm col-md-6">
+        <img class="back-sign" src="assets/images/fondo-signup3.jpg">
+      </div>
+    </div><!--row-->
+  </section>
+  <!--finish section-register-->
+  <!--start section-successfulregistry-->
+  <section class="section-Successfulregistry" id="section-registryFinal">
+    <div class="row">
+      <div class="cont-signup col-xs-12 col-sm-12 col-md-6">
+        <img class="logo-signup" src="assets/images/lyft-logo.png">
+        <div class="page-header">
+          <h1 class="text-center">Congratulation!</h1>
+        </div>
+        <h3 class="text-center">Your Registratio is successfull</h3>
+        <h3 class="text-center">Please try to login now</h3>
+        <div class="section-butts row">
+          <div class="col-xs-3 col-sm-3 col-md-3">
+            <button type="submit" class="but-back2 btn btn-default btn-lg" onclick="back3()"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6">
+            <button type="submit" class="but-nxt2 btn btn-default btn-lg" onclick="next3()">LOG IN</button>
+          </div>
+        </div><!--/.section-butts-->
+      </div><!--/.cont-signup-->
+      <div class="hidden-xs hidden-sm col-md-6">
+        <img class="back-sign" src="assets/images/DRIVEFORLYFT.jpg">
+      </div>
+    </div><!--row-->
+  </section>
+  <!--finish section-successfulregistry-->
+  
+
+
+
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://use.fontawesome.com/7f835b21e4.js"></script>
+  <script type="text/javascript" src="assets/js/app.js"></script>
+</body>
+</html>
